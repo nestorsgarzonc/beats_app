@@ -1,3 +1,4 @@
+import 'package:beats_app/src/widgets/cards_view.dart';
 import 'package:beats_app/src/widgets/custom_appbar.dart';
 import 'package:beats_app/src/widgets/fondo_circular.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,7 @@ class HomePage extends StatelessWidget {
                     ),
                     CustomAppBar(),
                     _Header(),
+                    CardsView(),
                   ],
                 ),
               ),
@@ -33,6 +35,8 @@ class HomePage extends StatelessWidget {
   }
 }
 
+
+
 class BuyBotton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,7 +48,7 @@ class BuyBotton extends StatelessWidget {
           right: 0.0,
           child: Container(
             decoration: BoxDecoration(
-                color: Colors.red,
+                color: Colors.redAccent,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(50))),
             width: size.width * 0.25,
             height: 70,
